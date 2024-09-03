@@ -6,6 +6,10 @@
 
 This is a proof of concept implementation of a RAG stack using Jigsaw Stack APIs. 
 
+## Video
+
+[Intro video](https://youtu.be/rcQSrwwHHps)
+
 ## Set up
 
 Create a `.env` file with the following:
@@ -79,4 +83,4 @@ Here's how the applcation works:
 
 ## What's next?
 
-The structure of this applicaiton is modular and the client application can changed to perform other task. For example, the [Translate API](https://docs.jigsawstack.com/api-reference/ai/translate) we can add a Python module that can translate text extracted from a Chinese website or PDF and make it queryable using the applicaiton. The simplicity and flexibility of Jigsaw Stack makes building applications easy and fast.
+The structure of this applicaiton is modular¸ and the client application can changed to perform other task. For example, the [Translate API](https://docs.jigsawstack.com/api-reference/ai/translate) we can add a Python module that can translate text extracted from a Chinese website or PDF and make it queryable using the applicaiton. The simplicity and flexibility of Jigsaw Stack makes building applications easy and fast.
