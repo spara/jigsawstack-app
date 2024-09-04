@@ -38,6 +38,8 @@ Pre-requisites checklist:
 - a Python environment with packages installed from requirements.txt
 - a cookies.txt file with cookies from your browser 
 
+> Note for Windows: If your operating system is Windows, run this application under WSL. Current versions of Chrome on Windows prevent yt_dlp from extracting cookies from the browser. Use an extension such as [`get cookies.txt LOCALY`](https://chromewebstore.google.com/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc?hl=en) to extract cookies.txt.
+
 ## Start the client application
 
 The client application uses [Streamlit](https://streamlit.io/) to run in a browser windoe. To start the application:
@@ -60,7 +62,7 @@ The client applicatin has several required inputs used for performing the RAG ta
     "Nvidia earnings"
 
 - Respond as: this tells the LLM how to respond to the prompt
-    "Jensen Wang answering investor questions"
+    "Jensen Huang answering investor questions"
 
 - Question: The question or request that you want answered or returned.
     "When will Nvidia release new products and what are the expected impacts on future earnings?"
