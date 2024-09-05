@@ -12,6 +12,8 @@ This is a proof of concept implementation of a RAG stack using Jigsaw Stack APIs
 
 ## Set up
 
+You must have a [Jigsaw Stacj account](https://jigsawstack.com/) and a [Supabase account](https://supabase.com/) to run this application.
+
 Create a `.env` file with the following:
 
 ```txt
@@ -75,7 +77,7 @@ Here's how the applcation works:
 
 1. This application extracts audio from a Youtube video using the `yt_dlp` package.  Text from the audio is extracted using [Speech to Text API](https://docs.jigsawstack.com/api-reference/ai/speech-to-text).
 
-2. The text from the audio is processed into vectors that represent parts of the text. The vectors are stored in Supabase's vector store. While many Large Language Models (LLMs) can hold large amounts of textual information in a prompt, sorting through large bodies of text can be inefficient and cause errors. By storing the text in a vector database, we can semantically query the database for just the information we need. This creates a compact and efficient prompt and decreases the likelihood of errors.
+2. The text from the audio is processed into vectors that represent parts of the text. The vectors are stored in Supabase's vector store. While many Large Language Models (LLMs) can hold large amounts of textual information in a prompt, sorting through large bodies of text can be inefficient and cause errors. By storing the text in a vector database, we can semantically query the database for just the information we need. This creates a [compact and efficient prompt](https://arxiv.org/abs/2409.01666) and decreases the likelihood of errors.
 
 3. The Supabase vector database is queried for information relevant for the prompt. The result is used in the prompt.
 
